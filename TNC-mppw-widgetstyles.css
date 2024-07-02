@@ -14,7 +14,7 @@
     --form-valid: #42bc34;
     --form-invalid: #dc3545;
     --form-btn-primary-text: #fff;
-    --form-btn-primary-bgcolor: #345B64;
+    --form-btn-primary-bgcolor: #345B64 !important;
     --form-btn-primary-hover: #539798;
     --form-btn-primary-active: #4273aa;
     --form-btn-secondary-text: #384249;
@@ -217,6 +217,226 @@
     margin-top: 0px;
     font-size: 14px;
 }
+
+.mpp-updatemyinfo--checkboxlabel {
+    padding-left: 10px;
+    vertical-align: -2px
+}
+
+.mpp-pill {
+    font-weight: bold;
+    color: #000;
+    background: #add8e6;
+    border-radius: 7px;
+    padding: 2px 6px;
+    margin: 2px 5px;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.mpp-pill-remove {
+    cursor: pointer;
+    padding-left: 5px;
+    color: #ff0000;
+}
+
+.suggest-group-row {
+    display: flex;
+    gap: 5px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.default-cursor {
+    cursor: default !important;
+}
+
+.pointer-cursor {
+    cursor: pointer !important;
+}
+
+.mpp-about-me--content-container {
+    color: #000;
+}
+
+.mpp-about-me--header-container {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.mpp-about-me--header {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.mpp-about-me--header-subtitle {
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.mpp-about-me--edit-button {
+    cursor: pointer;
+    border: 2px solid #dbdbdb;
+    width: 89px;
+    border-radius: 9px;
+    padding: 2px 13px 2px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mpp-about-me--edit-attributes-icon {
+    width: 30px;
+}
+
+.mpp-about-me--edit-button-text {
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mpp-about-me--attributes-block {
+    margin-bottom: 40px;
+}
+
+.mpp-about-me--attributes-block-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mpp-about-me--attribute {
+    margin: 5px;
+    font-size: 18px;
+    margin-bottom: 17px;
+}
+
+.mpp-about-me--checkbox-container {
+    font-size: 18px;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.mpp-about-me--checkbox-container input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.mpp-about-me--checkbox-container input[type="checkbox"]::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #1769ff;
+}
+
+.mpp-about-me--checkbox-container input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.mpp-about-me--checkbox-container + .mpp-about-me--checkbox-container {
+    margin-top: 1em;
+}
+
+.mpp-about-me--label-text {
+    margin-top: 3px;
+}
+
+.mpp-about-me--edit-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.mpp-about-me--submit-button {
+    border: 2px solid #6a8dcd;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #6a8dcd;
+    color: #fff;
+}
+
+.mpp-about-me--cancel-button {
+    border: 2px solid #6a8dcd;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    color: #6a8dcd;
+}
+
+.mpp-about-me--notification-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    background-color: #54a116;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: normal;
+    color: #fff;
+}
+.mpp-about-me--notification-text {
+    margin: 20px;
+}
+.mpp-about-me--notification-success {
+    background-color: #54a116;
+}
+.mpp-about-me--notification-fail {
+    background-color: #ef5536;
+}
+
+.mpp-about-me--notification-close {
+    width: 35px;
+    margin-top: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+#userAttributesEditMode {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mpp-about-me--centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.mpp-about-me--disabled-button {
+    pointer-events: none;
+    background-color: #c3c3c3;
+    border-color: #b3b3b3;
+    color: #747474;
+}
+
 /*--------------------------------------------*/
 /* Alerts                                     */
 /*--------------------------------------------*/
@@ -436,6 +656,10 @@
     justify-content: center;
 }
 
+.mpp-card--transparent {
+	background: none;
+}
+
 .mpp-card--badge {
     background: var(--card-textColor);
     border-top-left-radius: var(--card-borderRadius);
@@ -570,6 +794,7 @@
         margin-bottom: 16px;
     }
 }
+
 /*--------------------------------------------*/
 /* Card MultiSelect                           */
 /*--------------------------------------------*/
@@ -787,6 +1012,7 @@
 
 .mppw-form-field--is-invalid {
     padding-bottom: var(--form-field-margin);
+	border-color: red !important;				 
 }
 
     .mppw-form-field--is-invalid .mppw-upload-droparea {
@@ -866,6 +1092,18 @@
     border-radius: 50%;
 }
 
+.mppw-radio-gray-out {
+    position: absolute;
+    top: 0px !important;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--form-field-bgcolor);
+    border: 1px solid var(--form-field-border);
+    border-radius: 50%;
+    cursor: default;
+}
+
 .mppw-blue {
     color: var(--form-field-border--active);
 }
@@ -922,12 +1160,77 @@
 
 /*Safari specific styles*/
 
+.mppw-event-participant-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mppw-event-participant-title-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.mppw-event-participant-content-row {
+    display: flex;
+    margin-left: 42px;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.mppw-participant-number {
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 2px solid #cdcdcd;
+    padding: 2px;
+}
+
+.mppw-event-participant-button {
+    min-width: 50px;
+    margin-left: auto;
+    margin-right: 5px;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-top: 6px;
+}
+
+.mppw-event-participant-buttons {
+    display: flex;
+}
+
+.mppw-participant-icon {
+    margin-right: 2px;
+}
+
+.mppw-event-participant-name {
+    width: 30%;
+}
+
+.mppw-event-participant-contacts {
+    width: 25%;
+}
+
+.mppw-event-participant-address {
+    width: 30%;
+}
+
+.mppw-event-participant-price {
+    width: 10%;
+    margin-left: auto;
+}
+
+.mppw-event-gray-out {
+    color: #bcbcbc;
+    cursor: default;
+}
+
 /*--------------------------------------------*/
 /* Form                                       */
 /*--------------------------------------------*/
 :host {
     --form-field-color: #657783;
-    --form-field-fontFamily 'Jost', Helvetica, Arial, sans-serif;
+														  
     --form-field-margin: .45rem;
     --form-field-borderradius: 4px;
     --form-field-padding: 20px 13px;
@@ -1095,6 +1398,8 @@ select.mppw-form-field__control,
 
 .mppw-form-field__message--is-invalid {
     color: var(--form-invalid);
+    position: relative;
+    right: 10px;
 }
 
 .mppw-form-field__message_container {
@@ -1219,6 +1524,17 @@ select.mppw-form-field__control,
     width: 20px;
     background-color: var(--form-field-bgcolor);
     border: 1px solid var(--form-field-border);
+}
+
+.mppw-checkbox-gray-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--form-field-bgcolor);
+    border: 1px solid var(--form-field-border);
+    cursor: default;
 }
 
 /*--------------------------------------------*/
@@ -1363,8 +1679,7 @@ select.mppw-form-field__control,
 .toggle--input:checked + .toggle--label:after {
     left: 50%;
 }
-/*begincomment
-*/
+
 .toggle--btn {
     background: #345b64;
     border-radius: 4px;
@@ -1459,10 +1774,16 @@ select.mppw-form-field__control,
 }
 
 .mppw-upload-gallery {
-    margin-top: 10px;
+    margin: 20px 0px 10px 10px;
+}
+
+.mppw-invalid-file-type-label {
+    margin-top: 15px;
+    color: red;
 }
 
 .mppw-gallery-file {
+    position: relative;
     display: inline-block;
     text-align: center;
     vertical-align: top;
@@ -1481,6 +1802,15 @@ select.mppw-form-field__control,
 .mppw-upload-gallery span {
     display: block;
     overflow-wrap: break-word;
+}
+
+.mppw-gallery-file-close-icon {
+    cursor: pointer;
+    position: absolute;
+    top: -1rem;
+    right: -1.5rem;
+    height: 1.8rem !important;
+    width: 1.8rem !important;
 }
 
 .mppw-upload-file {
@@ -1516,12 +1846,15 @@ select.mppw-form-field__control,
     margin-top: 0px;
 }
 
-/* Custom alternative form inputs */
-
-.mppw-form-field__message--is-invalid {
-    margin-top: -2rem;
+.mppw-upload-text-only-accept {
+    font-size: 14px;
+    color: var(--root-text-color);
+    position: relative;
+    top: 5px;
+    line-height: 1.5;
 }
 
+/* Custom alternative form inputs */
 .mppw-form-field-alt {
     border: 1px solid var(--form-field-border);
     border-radius: var(--form-field-borderradius);
@@ -1629,6 +1962,18 @@ label .mppw-form-field__alt-label-container .mppw-form-field__alt-label-required
 
 input::-webkit-date-and-time-value {
 	text-align: left;
+}
+
+.mppw-form-field__alt-label-ios {
+    display: block;
+    margin-bottom: 0em !important;
+    font-size: 12px;
+    padding: 3px;
+}
+
+.mppw-form-field_alt-control-ios {
+    padding: 0.5rem !important;
+    margin-bottom: 0px;
 }
 
 /*--------------------------------------------*/
@@ -2131,6 +2476,10 @@ input::-webkit-date-and-time-value {
     padding: 0;
 }
 
+.mpp-innerpage--rssReader ul {
+    margin: 0;
+}
+
 .mpp-innerpage--back a {
     display: flex;
     align-items: center;
@@ -2214,6 +2563,25 @@ input::-webkit-date-and-time-value {
 }
 
 .mpp-innerpage--special-content {
+    padding-left: 30px;
+    font-size: 16px;
+    color: #666;
+    line-height: normal;
+}
+
+.mpp-innerpage--capacity {
+    margin-bottom: 40px;
+}
+
+.mpp-innerpage--capacity-title {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.mpp-innerpage--capacity-content {
     padding-left: 30px;
     font-size: 16px;
     color: #666;
@@ -2492,6 +2860,7 @@ input::-webkit-date-and-time-value {
 
     .mpp-innerpage--image,
     .mpp-innerpage--special,
+	.mpp-innerpage--capacity,			 
     .mpp-innerpage .progress-container {
         margin-bottom: 24px;
     }
@@ -2531,17 +2900,24 @@ input::-webkit-date-and-time-value {
 table.mppw-invoice {
 
     width: 100%;
-
+    border-collapse: collapse;
 }
 
-table.mppw-invoice td, th {
-    font-size: 11pt;
-}
+    table.mppw-invoice td,
+    table.mppw-invoice th {
+        font-size: 11pt;
+        padding: 10px;
+    }
 
-table.mppw-invoice tbody td {
-    border-bottom: solid 1px #EEEEEE;
+    table.mppw-invoice thead th {
+        border-bottom: solid 2px #DDDDDD;
+        vertical-align: bottom;
+        color: var(--form-field-border--active);
+    }
 
-}
+    table.mppw-invoice tbody td {
+        border-bottom: solid 1px #EEEEEE;
+    }
 
 .float-right {
     float: right;
@@ -2559,6 +2935,8 @@ table.mppw-invoice tbody td {
     text-align: center;
 }
 
+						   
+					  
 td.mppw-invoice-line-total, td.mppw-invoice-total, .mppw-invoice-summary-label {
     text-align: right;
 }
@@ -2568,13 +2946,147 @@ td.mppw-invoice-total {
 }
 
 td.mppw-invoice-qty {
+   width: 65px;
     text-align: center;
 }
 
 table.mppw-invoice tfoot #totalDueLabel, .mppw-invoice-summary-label {
     font-weight: bold;
 }
+table.mppw-invoice .checkout-description {
+    text-align: left;
+}
 
+table.mppw-invoice .checkout-for {
+    text-align: left;
+}
+
+table.mppw-invoice .checkout-total {
+    width: 65px;
+    text-align: right;
+}
+
+.payment-options-control {
+    border-radius: var(--form-field-borderradius);
+    color: var(--form-field-color);
+    font-size: 14px;
+    line-height: 20px;
+    padding: var(--form-field-padding);
+    width: 100%;
+}
+
+    .payment-options-control table.mppw-product-options {
+        width: 100%;
+    }
+
+    .payment-options-control .option-name {
+        padding: 10px 0;
+    }
+
+    .payment-options-control .product-selection-container {
+        display: inline-block;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        .payment-options-control .product-selection-container:hover input ~ .mppw-radio,
+        .payment-options-control .product-selection-container input:checked ~ .mppw-radio {
+            background-color: var(--primary);
+        }
+
+    .payment-options-control .mppw-radio:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .payment-options-control .product-selection-container input:checked ~ .mppw-radio:after {
+        display: block;
+    }
+
+    .payment-options-control .product-selection-container .mppw-radio:after {
+        top: 4px;
+        left: 4px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: white;
+    }
+
+    .payment-options-control .product-selection-container input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .payment-options-control .product-selection-container .mppw-radio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: var(--form-field-bgcolor);
+        border: 1px solid var(--form-field-border);
+        border-radius: 50%;
+    }
+
+#otherAmount {
+    margin-left: 8px;
+    padding: 5px;
+    border: 1px solid var(--form-field-border);
+    border-radius: var(--form-field-borderradius);
+    color: var(--form-field-color);
+    width: 170px;
+}
+
+.invoice-form__control {
+    border-radius: var(--form-field-borderradius);
+    color: var(--form-field-color);
+    font-size: 14px;
+    line-height: 20px;
+    padding: var(--form-field-padding);
+    width: 100%;
+}
+
+.mppw-payment-option-info-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+    background-color: #46afd9;
+    -webkit-mask-image: url(https://tmportalcomponents.blob.core.windows.net/icons/info.svg);
+    mask-image: url(https://tmportalcomponents.blob.core.windows.net/icons/info.svg);
+    background-size: contain; 
+}
+
+.payment-option-description {
+    color: var(--secondary); 
+}
+
+.mppw-error-message {
+    color: var(--form-invalid);
+    margin-top: 0.25rem;
+}
+
+input[type="text"].mppw-invalid {
+    outline: 2px solid var(--form-invalid);
+}
+
+.mppw-invoice .normal-weight td {
+    font-weight: normal !important;
+}
+
+.mppw-invoice .bold-weight td {
+    font-weight: bold !important;
+}
 
 /*--------------------------------------------*/
 /* Login                                      */
@@ -3397,6 +3909,18 @@ select:focus + .focus {
     object-fit: cover;
 }
 
+.mpp-online-directory .mpp-card--online-directory-big-image {
+    border-radius: 50%;
+    min-width: 350px;
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.image-placeholder {
+    cursor: default;
+}
+
 .mpp-online-directory .mpp-card--online-directory-footer {
     font-size: 10px;
     margin-top: 16px;
@@ -3547,6 +4071,7 @@ select:focus + .focus {
     background: white;
     position: relative;
     padding: 20px;
+    right: 8px;
 }
 
 .mpp-online-directory-modal-sm {
@@ -4091,7 +4616,6 @@ select:focus + .focus {
 
 .mppw-form-field--is-invalid .product-form__control {
     border-color: var(--form-invalid) !important;
-    padding: 28px 13px 12px 13px;
 }
 
 
@@ -4214,6 +4738,7 @@ select:focus + .focus {
     border-radius: var(--form-field-borderradius);
     margin-bottom: 1em;
     padding: 2px 5px;
+    margin: 1em 0em;
 }
 
     #promoCodeContainer h3 {
@@ -4305,7 +4830,7 @@ select:focus + .focus {
 
 * {
     box-sizing: border-box;
-    font-family: 'Jost', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .style-guide .grid--container {
@@ -4429,13 +4954,3 @@ select:focus + .focus {
     padding-left: 10px;
     vertical-align: -10px;
 }
-
-/*--------------------------------------------*/
-/* Extra Changes                              */
-/*--------------------------------------------*/
-
-/*
-.mppw-form-wrapper {
-    display: none;
-}
-*/
